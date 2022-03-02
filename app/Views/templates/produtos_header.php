@@ -7,7 +7,3 @@
     <title><?php echo $titulo ?></title>
 </head>
 <body>
-    <header id="header">
-        <h1>Sistema de Controle de Produtos.</h1>
-        <hr>
-    </header>
