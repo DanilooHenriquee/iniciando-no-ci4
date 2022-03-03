@@ -70,3 +70,23 @@ CRITICAL - 2022-03-02 16:53:07 --> Undefined variable: acao
 #8 C:\xampp\htdocs\iniciando-no-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp\htdocs\iniciando-no-ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #10 {main}
+CRITICAL - 2022-03-02 17:44:01 --> Invalid file: categorias.php
+#0 C:\xampp\htdocs\iniciando-no-ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias.php')
+#1 C:\xampp\htdocs\iniciando-no-ci4\system\Common.php(1089): CodeIgniter\View\View->render('categorias', Array, true)
+#2 C:\xampp\htdocs\iniciando-no-ci4\app\Controllers\Categorias.php(19): view('categorias', Array)
+#3 C:\xampp\htdocs\iniciando-no-ci4\system\CodeIgniter.php(825): App\Controllers\Categorias->index()
+#4 C:\xampp\htdocs\iniciando-no-ci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+#5 C:\xampp\htdocs\iniciando-no-ci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\iniciando-no-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\iniciando-no-ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-02 17:44:02 --> Invalid file: categorias.php
+#0 C:\xampp\htdocs\iniciando-no-ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias.php')
+#1 C:\xampp\htdocs\iniciando-no-ci4\system\Common.php(1089): CodeIgniter\View\View->render('categorias', Array, true)
+#2 C:\xampp\htdocs\iniciando-no-ci4\app\Controllers\Categorias.php(19): view('categorias', Array)
+#3 C:\xampp\htdocs\iniciando-no-ci4\system\CodeIgniter.php(825): App\Controllers\Categorias->index()
+#4 C:\xampp\htdocs\iniciando-no-ci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+#5 C:\xampp\htdocs\iniciando-no-ci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\iniciando-no-ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\iniciando-no-ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

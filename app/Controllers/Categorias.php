@@ -9,6 +9,15 @@ class Categorias extends BaseController
     public function index()
     {
         //chamar uma view que exibe todas as categorias.
+        $categoriaModel = new \App\Models\CategoriaModel;
+
+        $data = [
+            'categorias' => $categoriaModel->find(),
+            'titulo'     => 'Listando todas as categorias'
+        ];
+
+        echo view('categorias', $data);
+
     }
 
     public function inserir() 
@@ -32,8 +41,7 @@ class Categorias extends BaseController
 
         }
 
-        echo view('templates/produtos_header', $data);
         echo view('categorias_form', $data);
-        echo view('templates/produtos_footer');
+
     }
 }
