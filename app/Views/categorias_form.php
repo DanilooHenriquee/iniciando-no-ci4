@@ -8,7 +8,8 @@
     <title><?php echo $titulo ?></title>
 
     <style>
-        button, [type=submit] {
+        button,
+        [type=submit] {
             background-color: rgb(101, 255, 101);
             border: none;
             padding: 8px;
@@ -37,8 +38,12 @@
     <strong> <?php echo $msg ?> </strong>
 
     <form method="post">
-        <p>Nome da Categoria: <input type="text" name="nomecategoria"> </p>
-        <p> <input type="submit" value="<?php echo $acao ?>"> </p>
+        <p>Nome da Categoria:
+            <input type="text" name="nomecategoria" value="<?php echo (isset($categoria) ? $categoria->nomecategoria : ''); ?>">
+        </p>
+        <p>
+            <input type="submit" value="<?php echo $acao ?>">
+        </p>
     </form>
 </body>
 

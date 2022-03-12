@@ -58,11 +58,13 @@
             <tr>
                 <td>Código da Categoria</td>
                 <td>Nome da Categoria</td>
+                <td>&nbsp</td>
             </tr>
             <?php foreach ($categorias as $categoria) : ?>
                 <tr>
                     <td> <?php echo $categoria->id ?> </td>
                     <td> <?php echo $categoria->nomecategoria ?> </td>
+                    <td><a href="<?php echo base_url('categorias/editar/' . $categoria->id); ?>">Editar</a></td>
                 </tr>
             <?php endforeach ?>
         </table>

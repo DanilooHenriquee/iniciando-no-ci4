@@ -44,4 +44,31 @@ class Categorias extends BaseController
         echo view('categorias_form', $data);
 
     }
+
+    public function editar($id) 
+    {
+        $data = [
+            'titulo' => 'Editar Categoria ' . $id,
+            'acao'   => 'Editar',
+            'msg'    => '',   
+        ];
+
+        $categoriaModel = new \App\Models\CategoriaModel;
+        $categoria = $categoriaModel->find($id);
+
+        if($this->request->getMethod() === 'post') {
+            $categoria->nomecategoria = $this->request->getPost('nomecategoria');
+
+            if($categoriaModel->update($id, $categoria)) {
+                $data['msg'] = 'Categoria editada com sucesso';
+            } else {
+                $data['msg'] = 'Erro ao editar categoria';
+            }
+        }
+
+        $data['categoria'] = $categoria;
+
+        echo view('categorias_form', $data);
+
+    }
 }
